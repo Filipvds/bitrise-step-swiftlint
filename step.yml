@@ -1,0 +1,4 @@
+title: "SwiftLint"
+deps:
+  brew:
+    - name: swiftlint
