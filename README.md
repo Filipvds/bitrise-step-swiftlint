@@ -1,19 +1,43 @@
-# My Awesome Step
+# bitrise-step-swiftlint
 
-My Awesome Step is a solid starting code base for
-a new Step.
+SwiftLint step for Bitrise.
 
+## Usage
 
-## How to use this Step
+### bitrise.yml
 
-Can be run directly with the [bitrise CLI](https://github.com/bitrise-io/bitrise),
-just `git clone` this repository, `cd` into it's folder in your Terminal/Command Line
-and call `bitrise run test`.
+To use this step in your Bitrise workflow, prefix the step name with a Git URL of this repository:
 
-*Check the `bitrise.yml` file for required inputs which have to be
-added to your `.bitrise.secrets.yml` file!*
+```yml
+steps:
+  - git::git@github.com:netguru/bitrise-step-swiftlint.git@master:
+      title: swiftlint
+```
 
+### bitrise.io
 
-## Share your own Step
+As bitrise.io doesn't allow to add a custom step using the UI Workflow Editor, use the YAML editor to manually add the step to the workflow. Follow the guide above.
 
-You can share your Step or step version with the [bitrise CLI](https://github.com/bitrise-io/bitrise). Just run `bitrise share` and follow the guide it prints.
+## Development
+
+### Requirements
+
+This step requires the following pre-installed dependencies:
+
+- [Ruby](https://rvm.io) >= 2.2
+
+### Running
+
+Run your step by executing `step.sh` file:
+
+```bash
+$ ./step.sh
+```
+
+## About
+
+This project is made with <3 by [Netguru](https://netguru.co/opensource).
+
+### License
+
+Licensed under the MIT License. See [LICENSE.md](LICENSE.md) for more info.
