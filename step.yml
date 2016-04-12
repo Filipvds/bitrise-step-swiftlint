@@ -1,4 +1,24 @@
-title: "SwiftLint"
+#
+#  step.yml
+#
+#  Copyright (c) 2016 Netguru Sp. z o.o. All rights reserved.
+#
+
+# Identification
+
+
+title: SwiftLint
+summary: Performs linitng using SwiftLint.
+website: https://github.com/netguru/bitrise-step-swiftlint
+
+# Script characteristics
+
+is_requires_admin_user: false
+is_always_run: true
+is_skippable: true
+
+# Dependencies
+
 deps:
   brew:
     - name: swiftlint
