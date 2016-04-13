@@ -34,6 +34,12 @@ Run your step by executing `step.sh` file:
 $ ./step.sh
 ```
 
+### Committing
+
+This repository uses git-flow and protects `develop` and `master` branches from force pushes, which means the whole development process is pull-request-driven.
+
+The standard code review procedures are in place as well (although perhaps it should be done by Ruby developers).
+
 ## About
 
 This project is made with <3 by [Netguru](https://netguru.co/opensource).
