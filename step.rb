@@ -5,4 +5,4 @@ IO.popen('swiftlint').each do |line|
   puts line.chomp
   output << line.chomp
 end
-abort unless output.empty?
+abort if output.include(" error: ")?
